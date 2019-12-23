@@ -1,4 +1,3 @@
-from PIL import Image
 import pytesseract
 import os, sys
 from aip import AipOcr
@@ -20,7 +19,7 @@ def PathSetting():
     p = input("Use the default path by 'enter' Or input the path: ")
 
     if p == "":
-        path = "/Users/Zoe/Desktop/snaptoword"
+        path = "<Default location>"
     else:
         path = p
     return (path)
@@ -33,8 +32,6 @@ def New_All():
     key = input("Only convert the newest file: y; Converty all files: n \n")
     return (key)
 
-# invoke the tesseract
-pytesseract.pytesseract.tesseract_cmd = r'/usr/local/Cellar/tesseract/4.1.0/bin/tesseract'
 
 # set up the link to Baidu account
 APP_ID = <Baidu_APP_ID>
