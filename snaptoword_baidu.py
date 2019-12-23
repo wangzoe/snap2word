@@ -1,5 +1,4 @@
-import pytesseract
-import os, sys
+import os
 from aip import AipOcr
 
 
@@ -24,10 +23,6 @@ def PathSetting():
         path = p
     return (path)
 
-'''def LanguageSetting():
-    lang = input("Selecting English by enter 'eng' \t Selecting Chinese by enter 'chi'")
-    return (lang)
-'''
 def New_All():
     key = input("Only convert the newest file: y; Converty all files: n \n")
     return (key)
