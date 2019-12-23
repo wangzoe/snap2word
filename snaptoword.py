@@ -11,12 +11,12 @@ def TimeStampToTime(timestamp):
 p = input("Use the default path by 'enter' Or input the path: ")
 
 if p == "":
-    path = "/Users/Zoe/Desktop/snaptoword"
+    path = "<input your default file here.>"
 else:
     path = p
 
 # invoke the tesseract
-pytesseract.pytesseract.tesseract_cmd = r'/usr/local/Cellar/tesseract/4.1.0/bin/tesseract'
+pytesseract.pytesseract.tesseract_cmd = r'<file location of tesseract, e.g. /usr/local/Cellar/tesseract/4.1.0/bin/tesseract>'
 
 # selection of language
 lang = input("Selecting English by enter 'eng' \t Selecting Chinese by enter 'chi'")
@@ -31,7 +31,7 @@ def convert(file_name, lang_type):
         print ("invalid language, will use English as default.")
         lang = 'eng'
     image = Image.open(file_name)
-    content = pytesseract.image_to_string(image, lang)   # 解析图片
+    content = pytesseract.image_to_string(image, lang)   # convert the pic
     print(content + '\n')
 
 # only the newest, or all file?
@@ -64,6 +64,4 @@ else:
             print ("cannot", files)
      
 
-
-# get the import as the pic
 
