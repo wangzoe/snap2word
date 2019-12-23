@@ -37,9 +37,9 @@ def New_All():
 pytesseract.pytesseract.tesseract_cmd = r'/usr/local/Cellar/tesseract/4.1.0/bin/tesseract'
 
 # set up the link to Baidu account
-APP_ID = '11293265'
-API_KEY = 'FczPa3jOrR8pOkERD057nykE'
-SECRET_KEY = 'U9GiGICphWGMsQzkB8ngXWuGkoTspW2W'
+APP_ID = <Baidu_APP_ID>
+API_KEY = <KEY>
+SECRET_KEY = <Secret_KEY>
 
 client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
 
