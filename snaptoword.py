@@ -24,7 +24,7 @@ def PathSetting():
     p = input("Use the default path by 'enter' Or input the path: ")
 
     if p == "":
-        path = "/Users/Zoe/Desktop/snaptoword"
+        path = "</Users/..../Desktop/snaptoword>" # may change to your own location
     else:
         path = p
     return (path)
@@ -39,6 +39,7 @@ def New_All():
 
 # invoke the tesseract
 pytesseract.pytesseract.tesseract_cmd = r'/usr/local/Cellar/tesseract/4.1.0/bin/tesseract'
+# should change to your location of tesseract
 
 
 # save the pic in the file
